@@ -45,7 +45,7 @@ ul li{
 }
 
 
-img {
+img.me{
 	border-radius: 50%;
 	/*display: block;*/
 	float: right;
@@ -72,6 +72,8 @@ div{
 /*	margin-bottom: 1%;*/
 	margin-left: 20%;
 }
+
+
 button {
 	background-color: pink;
 	border: 2px solid pink;
@@ -258,8 +260,66 @@ button {
 	background: transparent;
 }
 
+button.accordion {
+	font-family: "Comic Sans MS";
+    background-color:none;
+    margin-left: 18%;
+    margin-top: 5%;
+    color: black;
+    cursor: pointer;
+    padding: 5px;
+    width: 60%;
+    text-align: center;
+    border: none;
+    font-size: 30px;
+}
+
+/* Add a background color to the button if it is clicked on (add the .active class with JS), and when you move the mouse over it (hover) */
+button.accordion.active, button.accordion:hover {
+    background-color: none;
+}
 
 
+div.panel {
+	position: relative;
+	max-width: 60%;
+	margin:0 auto;
+}
+div.panel img {
+	margin-left: 30%;
+	margin-right: 20%;
+}
+
+div.panel .content {
+	position: absolute;
+	margin-left: 30%;
+	margin-bottom: 0;
+	bottom: 0;
+	background: rgba(0, 0, 0, 0.5);
+	color: #f1f1f1;
+	width: 100%;
+	padding: 20px;
+}
+
+.panel .content p{
+	color: white;
+	background: none;
+}
+
+div.finding {
+	position: relative;
+	max-width: 60%;
+	margin-top: 0;
+	margin-left: 18%;
+	margin-right: 15%;
+}
+/*
+div.panel p {
+	max-width: 100%;
+	background: pink;
+	color: white;
+	margin-left: 30%;
+}*/
 
 
 
